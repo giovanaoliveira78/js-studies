@@ -1,1 +1,1 @@
-# js-studies
+# js study
