@@ -99,3 +99,20 @@ switch (option) {
   default: // caso não exista nenhum caso anterior que se encaixou..
     console.log("Opção inválida!")
 }
+
+// TRATAMENTO DE EXCEÇÕES 
+
+/* 
+  Uma exceção é uma condição ou evento imprevisto que ocorre durante o uso da aplicação que interrompe o fluxo normal de operações.
+  Essas situações inesperadas podem incluir erros, condições de falha ou eventos que a aplicação não está preparada para lidar.
+  Ex: Tentativa de abrir um arquivo que não existe ou falha na conexão com um banco de dados
+*/ 
+
+// TRY, deu certo? -->  SIM --> Finally
+// TRY, deu certo? -->  NÃO --> CATCH
+
+// CATCH tente novamente mais tarde etc
+
+// Quando você está usando um app e do nada ele trava e fecha, é porque não teve um tratamento de exceção
+
+// Para usar o CATCH, se pergunte: Ao tentar executar isso, ele está dependendo de alguma coisa externa? Se sim, usar um TRY CATCH
