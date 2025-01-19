@@ -106,7 +106,7 @@ switch (option) {
   Uma exceção é uma condição ou evento imprevisto que ocorre durante o uso da aplicação que interrompe o fluxo normal de operações.
   Essas situações inesperadas podem incluir erros, condições de falha ou eventos que a aplicação não está preparada para lidar.
   Ex: Tentativa de abrir um arquivo que não existe ou falha na conexão com um banco de dados
-*/ 
+*/
 
 // TRY, deu certo? -->  SIM --> Finally
 // TRY, deu certo? -->  NÃO --> CATCH
@@ -116,3 +116,26 @@ switch (option) {
 // Quando você está usando um app e do nada ele trava e fecha, é porque não teve um tratamento de exceção
 
 // Para usar o CATCH, se pergunte: Ao tentar executar isso, ele está dependendo de alguma coisa externa? Se sim, usar um TRY CATCH
+
+try {
+  // dentro do TRY é onde a gente TENTA executar algo
+  console.log(result) // da erro por não estar declarado
+} catch (error) {
+  // dentro do CATCH é onde a gente captura o erro para tratar
+  console.log("Não foi possível executar seu pedido. Tente novamente mais tarde!") // exibe o erro de forma amigavel 
+} finally {
+  // executa algo independente se deu certo ou errado
+  console.log("Fim")
+}
+
+let result2 = 0
+
+try {
+  if (result2 === 0) {
+    throw new error2("O valor é igual a zero")
+  }
+} catch (error) {
+  console.log(error)
+} finally {
+  console.log("Fim")
+}
