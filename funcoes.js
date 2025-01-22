@@ -90,3 +90,32 @@ function signIn(email, password){
 }
 
 signIn("fulano@email.com", "12345678")
+
+
+///////////////////////
+
+// Função anônima (função que não possui nome)
+
+const showMessage1 = function(){
+  return "Olá!!"
+}
+
+console.log(showMessage1) // irá retornar a função toda, e não só a "resposta" dela
+
+console.log(showMessage1()) // ao colocar o () na frente da função, ao executar irá exibir a resposta corretamente
+
+const showMessage2 = function(name){
+  return "Olá, " + name
+}
+
+console.log(showMessage2("Fulano"))
+
+const showMessage3 = function(message, name){
+  return message + name
+}
+
+console.log(showMessage3("Olá", "Fulano"))
+
+
+
+
