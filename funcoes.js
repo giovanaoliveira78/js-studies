@@ -5,7 +5,7 @@
 
 //Para criar uma função chamamos a palavra reservada function e na frente o nome da função
 
-function message() {
+function message(){
   console.log("Olá! É bom ter você aqui")
 } /// só dessa forma a função não é executada
 
@@ -17,7 +17,7 @@ message() // se eu chamar de novo, ela vai executar DE NOVO, e posso chamar quan
  - Argumentos: é o valor que é passado para a função
 */
 
-function mensagem(username) { // essa função recebe o parametro username
+function mensagem(username){ // essa função recebe o parametro username
   console.log("Olá", username) // eu uso o conteúdo de username aqui, que é o argumento
 } // username só existe nesse escopo, fora daqui da 
 
@@ -38,3 +38,9 @@ joinText("Fulaninho", "Beltrano", "da Silva") // na sequencia que colocar é com
 
 joinText("Fulanos") // são 3 parametros, se eu colocar só 1 os demais serão exibidos como undefined
 
+function soma(a,b){
+  let resultado = a + b
+  console.log(resultado)
+}
+
+soma(7,3)
