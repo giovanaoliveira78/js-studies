@@ -135,5 +135,34 @@ const showMessage5 = (username, email) => {
 
 showMessage5("Fulana", "fulana@email.com")
 
+///////////////////////////
+
+// Calback function: é uma função passada para outra função como um argumento
+
+function execute(taskName){
+  console.log("Executando a tarefa: ", taskName)
+
+  callback() // executei dentro desta função, uma função que foi criada abaixo
+}
+
+function callback(){ // essa função está sendo passada abaixo e acima dentro de outra função
+  console.log("Tarefa finalizada.")
+}
+
+execute("Download do arquivo...", callback)
 
 
+/// Criando a função no próprio parâmetro
+execute("Upload do arquivo...", function(){
+  console.log("Função de callback com uma função anônima.")
+})
+
+// Utilizando Arrow Function 
+
+execute("Excluindo arquivo...", () => {
+  console.log("Arquivo excluido")
+})
+
+execute("Salvando arquivo...", () => {
+  console.log("Arquivo salvo")
+})
