@@ -130,8 +130,10 @@ showMessage4()
 
 const showMessage5 = (username, email) => {
   // console.log("Oi, ", username,". Seu email é: ", email)
-  console.log(`Olá, ${username}. Seu email é: ${email}`)
+  console.log(`Olá, ${username}. Seu email é: ${email}`) // usando interpolação
 }
 
 showMessage5("Fulana", "fulana@email.com")
+
+
 
