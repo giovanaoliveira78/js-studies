@@ -40,7 +40,32 @@ joinText("Fulanos") // são 3 parametros, se eu colocar só 1 os demais serão e
 
 function soma(a,b){
   let resultado = a + b
-  console.log(resultado)
+  console.log(resultado) // exibo aqui dentro desse bloco
+
+  return resultado /// se eu quiser chamar essa resposta fora da função, eu coloco o return, porque ai o retorna para quem chamou a função
 }
 
 soma(7,3)
+
+let response = sum(7,7) // também posso guardar o valor retornado de sum, em uma variavel
+console.log(response)
+
+console.log(sum(5,6)) //dessa forma também consigo exibir o resultado da função
+
+
+//////////////////////
+
+
+showMessage("Olá, amigo")
+
+function showMessage(msg){ //// consigo usar essa função antes de ela ter sido declarada
+  console.log(msg)
+  endLine() //aqui eu chamei o endLine antes de ele ter sido declarado, ele foi declarado na linha debaixo
+
+  function endLine(){ // também consigo chamar uma função dentro de outra função
+    console.log("_________________________________________________________")
+  }
+}
+
+showMessage("Usando antes ou depois, a função era retornar do mesmo jeito")
+
