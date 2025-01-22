@@ -117,5 +117,21 @@ const showMessage3 = function(message, name){
 console.log(showMessage3("Olá", "Fulano"))
 
 
+///////////////////////////////////////
 
+// Arrow function (função de seta)
+
+const showMessage4 = () =>{
+  console.log("Oi!")
+}
+
+console.log(showMessage4)
+showMessage4()
+
+const showMessage5 = (username, email) => {
+  // console.log("Oi, ", username,". Seu email é: ", email)
+  console.log(`Olá, ${username}. Seu email é: ${email}`)
+}
+
+showMessage5("Fulana", "fulana@email.com")
 
