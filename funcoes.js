@@ -69,3 +69,24 @@ function showMessage(msg){ //// consigo usar essa função antes de ela ter sido
 
 showMessage("Usando antes ou depois, a função era retornar do mesmo jeito")
 
+////////////////////////////
+
+/*
+O comentário da documentação JavaScript (sintaxe de JSDoc)
+O JSDoc é um padrão para incorporar documentação no código-fonte a partir de comentários
+*/
+
+// Abaixo digitar uma barra e dois asteriscos
+
+/**
+ * 
+ * @param {String} email user email // se tiver asterisco dentro das chaves significa que aceita qualquer coisa
+ * @param {String} password more than six characters
+ * @returns {Number} user id
+ */
+function signIn(email, password){
+  // Fluxo de autenticação do usuário
+  return 7
+}
+
+signIn("fulano@email.com", "12345678")
