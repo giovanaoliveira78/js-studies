@@ -32,3 +32,14 @@ console.log(guestByClass.item[1])// assim também pega pela posição
 // Selecionar lista elementos pela tag
 const guestTag = document.getElementsByTagName("li")
 console.log(guestTag)
+
+///////////////////////////////////////////////////////////////////////
+
+// Query selector
+
+const guest1 = document.querySelector("#guest-1") /// usa se # para pegar pelo ID
+console.log(guest)
+
+const guest2 = document.querySelector(".guest") /// USe se o . para selecionar pela classe, aqui por padrão sempre retorna o primeiro elemento encontrado
+
+const guest3 = document.querySelectorAll(".guest") // usa se o all pra pegar tudo que tem dentro da classe
