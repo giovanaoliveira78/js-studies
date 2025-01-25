@@ -63,3 +63,23 @@ const guest = document.querySelector("#guest-1 span")
 console.log(guest.innerText) // retorna o texto sem formatação, retorna somente o contéudo visível
 
 console.log(guest.innerHTML) // retorna o HTML como texto
+
+//////////////////////////////////////
+
+// Alterando estilos
+
+const input = document.querySelector("#name")
+
+// Adiciona a classe
+input.classList.add("input-error")
+
+// Remove a classe
+input.classList.remove("input-error") /// ou
+
+// Se não tiver a classe adiciona. Se tem, remove
+input.classList.toggle("input-error")
+
+const button = document.querySelector("button")
+
+// Modificar as propriedades CSS do elemento
+button.style.backgroundColor = "red" // dessa forma ele muda a cor do botão
