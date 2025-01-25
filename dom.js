@@ -37,9 +37,29 @@ console.log(guestTag)
 
 // Query selector
 
+// GUEST É O NOME DO ID DE UM ELEMENTO UTILIZADO PELO PROFESSOR
+
 const guest1 = document.querySelector("#guest-1") /// usa se # para pegar pelo ID
 console.log(guest)
 
 const guest2 = document.querySelector(".guest") /// USe se o . para selecionar pela classe, aqui por padrão sempre retorna o primeiro elemento encontrado
 
 const guest3 = document.querySelectorAll(".guest") // usa se o all pra pegar tudo que tem dentro da classe
+
+/////////////////////////
+
+const guestt = document.querySelector("#guest-1")
+
+// Retorna o conteúdo de texto visível e oculto
+console.log(guest.textContent)
+
+// Também da para atribuir um novo conteúdo
+guest.textContent = "Beltrano da Silva"
+
+// As ações acima mudam tudo da li, para mudar apenas, por exemplo o SPAN deveria ser:
+
+const guest = document.querySelector("#guest-1 span")
+
+console.log(guest.innerText) // retorna o texto sem formatação, retorna somente o contéudo visível
+
+console.log(guest.innerHTML) // retorna o HTML como texto
