@@ -83,3 +83,29 @@ const button = document.querySelector("button")
 
 // Modificar as propriedades CSS do elemento
 button.style.backgroundColor = "red" // dessa forma ele muda a cor do botão
+
+
+/////////////////////////////////////////////////////////////////////
+
+// Criando elementos
+
+const guests = document.querySelector("ul")
+
+const newGuest = document.createElement("li") // permite que possa criar novos elementos
+newGuest.classList.add("guest")
+const guestName = document.createElement("span")
+
+guestName.textContent = "Beltrano"
+
+const newName = document.createElement("span")
+newName.textContent = "da Silva"
+
+// Adiciona após o último filho (ou seja, ele fica por último)
+newGuest.append(guestName)
+
+// Adiciona antes do primeiro filho (ou seja, ele fica por primeiro)
+newGuest.prepend(guestName)
+
+// É mais simples que o append e aceita apenas um argumento
+newGuest.appendChild(guestName)
+console.log(newGuest)
