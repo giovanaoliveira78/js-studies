@@ -182,3 +182,31 @@ form.onsubmit = (event) => { // ao invés de usar o addEventListener posso usar 
   event.preventDefault()
   console.log("Você fez submit no formulário")
 }
+
+/////////////////////////////////////////////////
+
+// Eventos input
+
+const input2 = document.querySelector("input")
+
+// keydown é um evento que é disparado quando uma tecla é pressionada (captura tudo, incluindo CTRL, SHIFT, etc)
+
+input.addEventListener("keydown", (event) => {
+  console.log(event.key) // se eu quiser pegar todas as letras, põe .key
+})
+
+// keypress - quando uma tecla que produz um valor do tipo caracter é pressionada (letras, números, pontos etc. ele ignora CRTL, SHIFT etc) espaço também é caracter
+input.addEventListener("keypress", (event) => {
+  console.log(event)
+})
+
+// Change é quando você sai do input 
+// input.addEventListener("change")
+
+input.onchange = () => {
+  inputChange()
+}
+
+function inputChange(){
+  console.log("O input mudou")
+}
