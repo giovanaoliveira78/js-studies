@@ -171,3 +171,14 @@ button.addEventListener("click", (event) => {
   event.preventDefault()
   console.log("Clicou")
 })
+
+/////////////////////////////////////////////////////////////////////
+
+// Eventos de formulário
+
+const form = document.querySelector("form")
+
+form.onsubmit = (event) => { // ao invés de usar o addEventListener posso usar direto o que tem dentro dele, mas elempega só o último event criado
+  event.preventDefault()
+  console.log("Você fez submit no formulário")
+}
