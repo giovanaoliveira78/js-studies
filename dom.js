@@ -210,3 +210,10 @@ input.onchange = () => {
 function inputChange(){
   console.log("O input mudou")
 }
+
+////////////////////////////////////////////////////////////////
+
+// Expressões regulares
+
+// É utilizado para identificar se uma ocorrência ou padrão existe em uma string
+// Um padrão de expressão é composto por um conjunto de caracteres ou uma commbinação de caracteres simples e especiais
