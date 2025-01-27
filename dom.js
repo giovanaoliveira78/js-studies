@@ -109,3 +109,16 @@ newGuest.prepend(guestName)
 // É mais simples que o append e aceita apenas um argumento
 newGuest.appendChild(guestName)
 console.log(newGuest)
+
+//////////////////////////////////////////////////////////////////////////////
+
+// Manipulando atributos
+
+const input1 = document.querySelector("input")
+
+input.setAttribute("desabled", true) // se eu quiser desabilitar o input
+
+input.setAttribute("type", "file") // se eu quiser colocar o input em formato de arquivo
+
+input.removeAttribute("id") // se eu quiser remover o atributo ID
+
