@@ -122,3 +122,25 @@ input.setAttribute("type", "file") // se eu quiser colocar o input em formato de
 
 input.removeAttribute("id") // se eu quiser remover o atributo ID
 
+//////////////////////////////////////////
+
+// Eventos 
+
+// Quando o usuário interage com a aplicação, isso é um evento
+
+window.addEventListener("load", () =>{
+  console.log("A página foi carregada!")
+}) // é um método que observa tudo que acontece com uma janela, neste exemplo observar o load
+
+
+// quando um botão tem o type submit, após clicar ele automaticamente regarrega a página
+addEventListener("click", (event) => {
+  event.preventDefault() /// com isso ele não regarrega a página mais 
+  console.log(event)
+
+  // retorna o elemento clicado
+  console.log(event.target)
+
+  // Retorna o textContent do elemento clicado
+  console.log(event.target.textContent)
+})
