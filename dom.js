@@ -144,3 +144,30 @@ addEventListener("click", (event) => {
   // Retorna o textContent do elemento clicado
   console.log(event.target.textContent)
 })
+
+//////////////////////////////////////////////////////////////////
+
+// Eventos em um elemento específico
+
+const ul = document.querySelector("ul")
+
+ul.addEventListener("scroll", () => {
+  console.log(ul.scrollTop) // toda vez que fizer o scroll na lista ele dispara o evento
+
+  if(ul.scrollTop > 300){
+    console.log("Fim da lista")
+
+    ul.scrollTo({ // scrollTo leva a lista pro topo de novo
+      top: 0, // top é a propriedade e depois o valor que quero atrubuir ao objeto
+      behavior: "smooth", // deixa mais suave visualmente voltar pro topo da lista
+    
+    })
+  }
+})
+
+const button = document.querySelector("button")
+
+button.addEventListener("click", (event) => {
+  event.preventDefault()
+  console.log("Clicou")
+})
