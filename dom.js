@@ -217,3 +217,9 @@ function inputChange(){
 
 // É utilizado para identificar se uma ocorrência ou padrão existe em uma string
 // Um padrão de expressão é composto por um conjunto de caracteres ou uma commbinação de caracteres simples e especiais
+
+//////////////////////////////////////////////////////////////////////////
+
+// Utilizando regexr
+
+// site: https://regexr.com/
