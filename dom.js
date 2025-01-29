@@ -265,3 +265,27 @@ form.addEventListener("submit", (event) => {
 
   // const value = input.value.replace(regex,value)
 })
+
+/// Depuração de código ou debug
+
+// processo de encontrar erros, a raiz do problema pra corrigir
+
+// Breakpoint - é um ponto no código fonte onde a execução do programa será pausada quando atingir esse ponto específico para que você possa inspecionar o estado do programa
+
+// Inspecionar também faz parte do debug
+
+const input7 = document.querySelector("input")
+const form = document.querySelector("form")
+
+form.onsubmit = (event) => {
+  event.preventDefault()
+
+  const value = input.value
+  const hasNumberRegex = /\d+/g
+
+  if(hasNumberRegex.test(value)){
+    alert("O texto contém números. Por favor, digite corretamente")
+  } else {
+    alert("Enviado")
+  }
+}
