@@ -128,7 +128,7 @@ input.removeAttribute("id") // se eu quiser remover o atributo ID
 
 // Quando o usuário interage com a aplicação, isso é um evento
 
-window.addEventListener("load", () =>{
+window.addEventListener("load", () => {
   console.log("A página foi carregada!")
 }) // é um método que observa tudo que acontece com uma janela, neste exemplo observar o load
 
@@ -154,13 +154,13 @@ const ul = document.querySelector("ul")
 ul.addEventListener("scroll", () => {
   console.log(ul.scrollTop) // toda vez que fizer o scroll na lista ele dispara o evento
 
-  if(ul.scrollTop > 300){
+  if (ul.scrollTop > 300) {
     console.log("Fim da lista")
 
     ul.scrollTo({ // scrollTo leva a lista pro topo de novo
       top: 0, // top é a propriedade e depois o valor que quero atrubuir ao objeto
       behavior: "smooth", // deixa mais suave visualmente voltar pro topo da lista
-    
+
     })
   }
 })
@@ -207,7 +207,7 @@ input.onchange = () => {
   inputChange()
 }
 
-function inputChange(){
+function inputChange() {
   console.log("O input mudou")
 }
 
@@ -223,3 +223,45 @@ function inputChange(){
 // Utilizando regexr
 
 // site: https://regexr.com/
+
+///////////////////////////////////////////////////////////////////////////
+
+// Manipulando o input
+
+//  /\D+/g
+// o \D é para identificar letras 
+// 0 + é para identifcar sequências, então ABC já identifica essa sequência
+// o /g é a flag de global para pegar todas as ocorrências da string
+
+const input3 = document.querySelector("input")
+const form = document.querySelector("form")
+
+
+input3.addEventListener("input", () => {
+  const value = input.value
+
+  const regex = /\D+/g // essa expressão identifica caracteres que não seja digitos
+
+  // Retorna o padrão encontrado na string
+  console.log(value.match(regex))
+
+  // Testa se atende o padrão
+  const isValid = regex.test(value)
+  console.log(isValid)
+})
+
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault()
+  const regex = /\D+/g
+  const value = input.value
+
+  if (regex.test(value)) {
+    console.log(value)
+  } else {
+    alert("Valor inválido. Digite corretamente!")
+  }
+
+
+  // const value = input.value.replace(regex,value)
+})
