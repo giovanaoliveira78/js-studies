@@ -59,3 +59,12 @@ console.log(user["email"]) // é a mesma coisa que usando o . para ir acessando 
 console.log(user["name"]["first_name"])
 user["message"]()
 
+const usuario = {
+  name: "Dean",
+  email: "teste@email.com",
+  message: function () {
+    console.log(`Hey, ${this.name}`) // se usar a aron function o THIS não funciona, tem que ser a função anonima
+  }
+}
+
+usuario.message()
