@@ -41,10 +41,21 @@ const user = {
     postal_code: "12345-123"
   },
   message: () => {
-    console.log("Oi, Dean")
+    console.log("Hey, Sam")
   }
 }
 
+// Acessando propriedades e métodos usando a notação de ponto
+console.log(user.email)
 
+// Acessando propriedades de objetos
+console.log(user.name.first_name)
 
+// Executa o método do objeto
+user.message()
+
+// Notação de colchetes []
+console.log(user["email"]) // é a mesma coisa que usando o . para ir acessando as propriedades do objeto mas com colchetes
+console.log(user["name"]["first_name"])
+user["message"]()
 
