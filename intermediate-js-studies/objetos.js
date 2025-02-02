@@ -68,3 +68,25 @@ const usuario = {
 }
 
 usuario.message()
+
+///////////////////////////////
+
+const product = {
+  name: "Teclado",
+  quantity: 100,
+}
+
+console.log(product.name)
+
+// Atualiza o valor de uma propriedade
+console.log(product.quantity) // se eu dar um console.log antes de atualizar, ele vai pegar o valor anterior
+product.quantity = 90
+console.log(product.quantity) // colocando o console.log depois, ele já pega o valor atualizado
+
+console.log(product.name)
+product.name = "Mouse"
+console.log(product.name)
+
+// Notação de colchetes para atualizar o conteúdo
+product["quantity"] = 50
+console.log(product)
