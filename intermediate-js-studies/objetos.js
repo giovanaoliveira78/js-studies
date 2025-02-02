@@ -20,3 +20,31 @@
 // Um carro pode ligar/desligar, acelerar/frear etc
 // Tudo que um objeto executa é chamado de comportamento
 // no Javascript as propriedades podem ser valores, como texto ou números, e os métodos são funções associadas a esse objeto
+
+// Cria um objeto vazio
+const obj = {}
+console.log(obj)
+console.log(typeof obj)
+
+// Cria um objeto com propriedades e métodos
+const user = {
+  email: "email@email.com", // email: é a propriedade e "" o valor
+  age: 18,
+  name: { // estrutura de objeto aninhado (um dentro do outro)
+    first_name: "Sam", // para objetos é comum usar o padrão de separar por _, já para variáveis é mais comum usarAssim
+    surname: "Winchester",
+  },
+  address: {
+    street: "X",
+    number: 1,
+    city: "Kansas",
+    postal_code: "12345-123"
+  },
+  message: () => {
+    console.log("Oi, Dean")
+  }
+}
+
+
+
+
