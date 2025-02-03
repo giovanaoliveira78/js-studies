@@ -90,3 +90,29 @@ console.log(product.name)
 // Notação de colchetes para atualizar o conteúdo
 product["quantity"] = 50
 console.log(product)
+
+///////////////////////////////////////////
+
+// Encadeamento opcional / Optional chaining
+
+// Se a propriedade ou função chamada é nullish (null or undefined), a expressão retorna undefined em vez de gerar um erro
+
+// Útil ao explorar o conteúdonde um objeto quando não existe garantia da existência de determinadas propriedades obrigatórias.
+
+const user1 = {
+  id: 1,
+  name: "Elena",
+  // address: {
+  //   street: "N",
+  //   city: "Mystic Falls",
+  //   geo: {
+  //     latitude: 47.8080,
+  //     longitude: 17.5674
+  //   },
+  // },
+  message: function(){
+    console.log(`Hey, ${this.name}`)
+  }
+}
+
+console.log(user1?.address?.city)
