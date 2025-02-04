@@ -110,9 +110,34 @@ const user1 = {
   //     longitude: 17.5674
   //   },
   // },
-  message: function(){
-    console.log(`Hey, ${this.name}`)
-  }
+  // message: function(){
+  //   console.log(`Hey, ${this.name}`)
+  // }
 }
 
-console.log(user1?.address?.city)
+console.log(user1?.address?.city) // o adress está comentado, colocando as interrogações eu quero dizer que não sei se terá algum valor ali, pois é opcional, dessa forma não aponta erro, mas aponta UNDEFINED
+
+user.message?.() // nesse caso também, não sei se esse método está disponível, se tiver, executa. Se não, da undefined
+
+
+//////////////////////
+
+/*
+OPERADOR DE COALESCÊNCIA NULA (??)
+Operador lógico que retorna o seu operando do lado direito quando o seu operador do lado esquerdo é null ou undefined. Caso contrário, ele retorna o seu operando do lado esquerdo
+*/
+
+let content = null
+console.log(content ?? "Conteúdo padrão") // se content estiver null, ele exibe o conteúdo que está após a ?? (lado direito)
+
+let test = "Hey"
+console.log(test ?? "Hi") // Nesse caso o test não está null, então vai exibir o conteúdo de test (lado esquerdo)
+
+// ele leva em consideração somente o nulo ou undefined
+
+const user2 = {
+  name: "Katherine",
+  picture: undefined
+}
+
+console.log(user2.picture ?? "default.png") // nesse caso, a imagem é undefined, então exibe o defalut.png
