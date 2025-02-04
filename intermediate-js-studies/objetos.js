@@ -141,3 +141,56 @@ const user2 = {
 }
 
 console.log(user2.picture ?? "default.png") // nesse caso, a imagem é undefined, então exibe o defalut.png
+
+//////////////////////////////
+
+// Funções construtoras 
+
+function createProduct(name) {
+  const product = {}
+
+  product.name = name
+  product.details = function () {
+    console.log(`O nome do produto é ${this.name}`)
+  }
+
+  return product
+}
+
+// O new cria um novo objeto utilizando a estrutura do construtor ou da função constratutora
+
+const product1 = new createProduct("teclado")
+console.log(product1.name)
+product1.details()
+
+const product2 = new createProduct("mouse")
+console.log(product2.name)
+product2.details()
+
+console.log(product1 === product2) // se eu colocar pra verificar se o product 1 é estritamente igual ao product2 ele vai dar false, porque são objetos diferentes
+
+// Exemplos de funções construtoras disponíveis no próprio Javascript
+
+let myName = new String("Stefan")
+console.log(myName)
+
+let price = "40.6".replace(".", "")
+console.log(price)
+
+let date = new Date("2025-1-1")
+console.log(date)
+
+function person(name){
+  this.name = name
+  this.message = function(){
+    console.log(`Hey, ${this.name}`)
+  }
+}
+
+const person1 = new person("Damon")
+console.log(person1.name)
+person1.message()
+
+const person2 = new person("Caroline")
+console.log(person2.name)
+person2.message()
