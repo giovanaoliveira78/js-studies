@@ -83,3 +83,26 @@ console.log(maskedNumber)
 // O padStart preenche a string do final
 const number = "123"
 console.log(number.padEnd(10, "#")) // nesse caso irá exibir 123#######, porque mesmo que não tenha 10 digitos, eu coloquei que eu quero que tenha 10 então ele preencheu com # até ter 10 digitos
+
+/////////////////
+
+// Separando e unindo strings
+
+
+// Separar a string
+let text = "Estudar, Aprender, Praticar"
+
+let separate = text.split(",") // split é um método que divide texto, por exemplo aqui coloquei a virgula, e ele sabe que em todo lugar que tiver a virgula é pra separar (nesse caso ele faz uma lista)
+
+console.log(separate)
+
+let message3 = "Estou aprendendo Javascript"
+console.log(message3.split("a")) // aqui ele retira todas as letras A da frase
+// também da pra deixar as aspas vazias, só com espaço, assim " ", que ele corta a cada espaços
+
+// Unir a string
+let joined = separate.join()
+console.log(joined) // Dessa forma ele retorna igual está declarado, com as virgulas
+
+let joined1 = separate.join(" - ")
+console.log(joined1) // dessa forma ele trás do texto separado por - // ele usa um outro caracter para dividir
