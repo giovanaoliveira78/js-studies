@@ -59,3 +59,27 @@ console.log(textWithSpace.trim()) // trim remove espaços em branco no início e
 console.log(textWithSpace.trim().length) // aqui eu consigo verificar o tamanho que tem agora depois de remover os espaços
 
 // o método TRIM não vai remover os espaços do meio do texto, pois ele entende que faz parte da string, irá remover só o espaço do começo e fim
+
+////////////////////////////////////
+
+// Completando uma string
+
+const creditCard = "1234567812344928"
+
+console.log(creditCard.length)
+
+// Pega os quatro últimos dígitos
+const lastDigits = creditCard.slice(-4) // para pegar os 4 últimos digitos do cartão
+console.log(lastDigits)
+
+// Para mascarar os números
+
+// padStart preenche a string do início
+const maskedNumber = lastDigits.padStart(creditCard.length, "*") // é padStart um método de string que preenche a string a partir do início, com dois parametros, o primeiro é o tamanho dos números, o segundo é o que que quero colocar no lugar, pode ser asterisco, X etc
+
+console.log(maskedNumber)
+
+
+// O padStart preenche a string do final
+const number = "123"
+console.log(number.padEnd(10, "#")) // nesse caso irá exibir 123#######, porque mesmo que não tenha 10 digitos, eu coloquei que eu quero que tenha 10 então ele preencheu com # até ter 10 digitos
