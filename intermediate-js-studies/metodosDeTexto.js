@@ -106,3 +106,17 @@ console.log(joined) // Dessa forma ele retorna igual está declarado, com as vir
 
 let joined1 = separate.join(" - ")
 console.log(joined1) // dessa forma ele trás do texto separado por - // ele usa um outro caracter para dividir
+
+/// Encontrando um conteúdo no texto
+
+let message4 = "Estou estudando os fundamentos de Javascript"
+
+// Como obter a posição da palavra
+console.log(message4.indexOf("estudando")) // indexOf procura pela palavra na frase, nesse caso aparece a partir da posição 3
+
+// caso ele não encontre a palavra ele retorna -1
+console.log(message4.indexOf("javascript"))
+
+//// Como verificar se existe a palavra na string
+console.log(message4.includes("Javascript")) // ele devolveu true, porque existe essa palavra na string
+console.log(message4.includes("javascript")) // com j minusculo irá retornar false, pois não existe lá
