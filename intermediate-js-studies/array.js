@@ -45,3 +45,25 @@ console.log(fullName.split(" ")) // está vazio as aspas (mas com espaço) porqu
 
 // Cria um array com as letras, cada posição é uma letra, inclusive os espaços
 console.log(Array.from(fullName)) // ele cria um array a partir da strinf fullName
+
+///////////////////////
+
+// Adicionando e removendo um item do array
+
+let users = []
+
+// Adiciona um item no final do array
+users.push("Sam") // o método push adiciona algo no final do array
+users.push("Dean")
+users.push("Mary")
+
+// Adiciona um item no início do array
+users.unshift("John")
+
+// Remove um item do início do array
+users.shift()
+
+// Remove um item do final do array
+users.pop()
+
+console.log(users)
