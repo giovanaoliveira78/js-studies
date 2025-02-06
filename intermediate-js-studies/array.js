@@ -111,3 +111,13 @@ myArray[3]() // exibe a função
 console.log(myArray[4]) // exibe o objeto
 console.log(myArray[4].name) // exibe a propriedade name do objeto
 console.log(myArray[4].email) // exibe a propriedade email do objeto
+
+///////////////////////////////////////
+
+// Verificando se existe um item no array
+
+let FRUIT = ["Apple", "Orange", "banana"]
+
+// Verifica se um item existe no array
+console.log(FRUIT.includes("Orange")) // se encontrar o item retorna true
+console.log(FRUIT.includes("Watermelon")) // se não encontrar retorna false
