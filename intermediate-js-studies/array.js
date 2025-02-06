@@ -29,6 +29,19 @@ console.log(fruits.length)
 // Acessa o item pelo índice
 console.log(fruits[1])
 
-// Exibe o último elemento da lista
+// Exibe o último elemento da lista dinamicamente
 console.log(fruits[fruits.length -1 ]) // minha lista tem o tamanho 3, mas como são indices, é 0, 1, 2. E dessa forma vai ser undefined, então SEMPRE é o tamanho da lista -1
 // sempre é o tamanho da lista -1
+
+///////////////////////////////
+
+// Convertendo uma string em array
+
+let fullName = "Elena Gilbert"
+console.log(fullName)
+
+// Cria um array com os nomes separando pelo espaço
+console.log(fullName.split(" ")) // está vazio as aspas (mas com espaço) porque quero que quebre a linha onde tem espaço
+
+// Cria um array com as letras, cada posição é uma letra, inclusive os espaços
+console.log(Array.from(fullName)) // ele cria um array a partir da strinf fullName
