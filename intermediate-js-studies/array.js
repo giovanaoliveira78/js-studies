@@ -67,3 +67,22 @@ users.shift()
 users.pop()
 
 console.log(users)
+
+///////////////////////////////////////////////
+
+// Usando o indice
+
+let fruit = ["Apple", "Watermelon", "Lemon", "Strawberry"]
+
+// Encontra e retorna o indice do elemento no array
+let position = fruit.indexOf("Watermelon")
+console.log(position)
+
+// se eu colocar um item que não tem no array ele retorna -1
+
+// fruit.splice(1, 3) // ele remove do indice 1 ao 3, primeiro parametro é onde ele deve começar a remover e o segundo é quantos itens da lista tem que remover após o start que você sinalizou, ou seja, a partir do indice 1, remova 3 itens
+console.log(fruit) // retornando somente apple
+
+
+fruit.splice(position, 1) // dessa forma eu digo qual eu quero excluir especificamente, então coloco que eu quero remover o item do indice 1, e sai o watermelon
+console.log(fruit)
