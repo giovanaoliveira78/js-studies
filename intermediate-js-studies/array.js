@@ -86,3 +86,28 @@ console.log(fruit) // retornando somente apple
 
 fruit.splice(position, 1) // dessa forma eu digo qual eu quero excluir especificamente, então coloco que eu quero remover o item do indice 1, e sai o watermelon
 console.log(fruit)
+
+//////////////////////////////////////////////
+
+// Quais elementos array aceita?
+
+let myArray = [
+  "Um texto",
+  10,
+  true,
+  function(){
+    console.log("Função dentro do array")
+  },
+  {
+    name: "Luan",
+    email: "email"
+  }
+]
+
+console.log(myArray[0]) // exibe a string (um texto)
+console.log(myArray[1]) // exibe o número (10)
+console.log(myArray[2]) // exibe o boolean (false)
+myArray[3]() // exibe a função
+console.log(myArray[4]) // exibe o objeto
+console.log(myArray[4].name) // exibe a propriedade name do objeto
+console.log(myArray[4].email) // exibe a propriedade email do objeto
