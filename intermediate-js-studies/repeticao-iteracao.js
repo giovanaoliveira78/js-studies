@@ -156,3 +156,14 @@ for (let i = 0; i < 10; i++) {
   }
   console.log(i)
 }
+
+////////////////////////////////////////////////////
+
+// Continue encerra (pula) a execução das instruções na iteração atual e continua a execução do loop com a próxima iteração
+
+for (let ie = 0; ie < 10; ie++){
+  if(ie === 5){
+    continue // o continue fez pular o 5
+  }
+  console.log(ie)
+}
