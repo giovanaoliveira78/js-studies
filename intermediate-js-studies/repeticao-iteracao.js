@@ -18,3 +18,13 @@ while (execute) {
 }
 
 console.log("Segue o fluxo...")
+
+////////////////////////////////////////////
+
+// Loop infinito
+
+let value = true
+
+// while(value === true){
+//   console.log("Executando while...")
+// }
