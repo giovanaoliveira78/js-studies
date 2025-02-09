@@ -101,7 +101,7 @@ for (let property in person) { //esse let é uma varável axiliar, em cada itera
 
 let students = ["Sam", "Dean", "Castiel"]
 
-for (let index in students){
+for (let index in students) {
   console.log(students[index])
 }
 
@@ -111,7 +111,7 @@ for (let index in students){
 
 let estudantes = ["Elena", "Caroline", "Bonnie"]
 
-for (let student of estudantes){
+for (let student of estudantes) {
   console.log(student)
 }
 
@@ -123,6 +123,36 @@ let user = [{
 }
 ]
 
-for (let value of user){
+for (let value of user) {
   console.log(value.name)
+}
+
+//////////////////////////////////////////////////////////
+
+// break encerra a execução da repetição ou switch para seguir para a instrução seguinte
+
+let options = 4
+
+switch (options) {
+  case 1:
+    console.log("Cadastrar")
+    break
+  case 2:
+    console.log("Atualizar")
+    break
+  case 3:
+    console.log("Remover")
+    break
+  default:
+    console.log("Opção inválida")
+    break
+}
+
+// Utilizando o break para finalizar a repetição
+
+for (let i = 0; i < 10; i++) {
+  if(i === 5){
+    break
+  }
+  console.log(i)
 }
