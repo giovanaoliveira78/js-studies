@@ -6,18 +6,18 @@
 
 // WHILE: executa até que a condição seja verdadeira
 
-let execute = true
+// let execute = true
 
-while (execute) {
-  let response = window.prompt("Deseja continuar: 1 (SIM) ou 2 (NÃO)")
+// while (execute) {
+//   let response = window.prompt("Deseja continuar: 1 (SIM) ou 2 (NÃO)")
 
-  console.log(response)
-  if (response === "2") {
-    execute = false
-  }
-}
+//   console.log(response)
+//   if (response === "2") {
+//     execute = false
+//   }
+// }
 
-console.log("Segue o fluxo...")
+// console.log("Segue o fluxo...")
 
 ////////////////////////////////////////////
 
@@ -40,4 +40,42 @@ do {
   console.log(value)
 } while (value < 10)
 
-  console.log("Segue fluxo...")
+console.log("Segue fluxo...")
+
+//////////////////////////////////////////////////////////////
+
+// Loop for
+
+// FOR repete até que a condição seja falsa
+
+// - variável de controle
+// - condição
+// - incremento ou decremento da variável de controle
+
+// for (step = 0; step < 10; step++) {
+//   console.log(step)
+// }
+
+/* Exemplo de uma tabuada
+console.log(" ### TABUADA ###")
+console.log(`7x0 = ${7*0}`)
+console.log(`7x0 = ${7*1}`)
+console.log(`7x0 = ${7*2}`)
+console.log(`7x0 = ${7*3}`)
+console.log(`7x0 = ${7*4}`)
+console.log(`7x0 = ${7*5}`)
+console.log(`7x0 = ${7*6}`)
+console.log(`7x0 = ${7*7}`)
+console.log(`7x0 = ${7*8}`)
+console.log(`7x0 = ${7*9}`)
+console.log(`7x0 = ${7*10}`)
+*/
+
+let number = 7
+
+// ++ é incremento, ou seja, soma mais um
+// -- é decremento, ou seja, subtrai um
+
+for (step = 0; step <= 10; step++) {
+  console.log(`${number}x${step} = ${number * step}`)
+}
