@@ -104,3 +104,25 @@ let students = ["Sam", "Dean", "Castiel"]
 for (let index in students){
   console.log(students[index])
 }
+
+////////////////////////////////////////////////////////
+
+// FOR of itera sobre os valores de um objeto iterável
+
+let estudantes = ["Elena", "Caroline", "Bonnie"]
+
+for (let student of estudantes){
+  console.log(student)
+}
+
+// o for of só funciona com coisas iteraveis, ou seja, array, com objetos da erro
+
+let user = [{
+  name: "Caroline",
+  email: "email@email.com" /// uma solução é colocar o objeto dentro de um array
+}
+]
+
+for (let value of user){
+  console.log(value.name)
+}
