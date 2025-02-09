@@ -79,3 +79,28 @@ let number = 7
 for (step = 0; step <= 10; step++) {
   console.log(`${number}x${step} = ${number * step}`)
 }
+
+/////////////////////////////////////////////////
+
+// FOR in executa iterações a partir de um objeto e percorre as propriedades
+
+let person = {
+  name: "Anne",
+  surname: "Shirley",
+  email: "email@email.com"
+}
+
+
+for (let property in person) { //esse let é uma varável axiliar, em cada iteração ele guarda a resposta em property
+  // Dessa forma exibe o nome da propriedade
+  console.log(property)
+
+  // Exibe o conteúdo da propriedade
+  console.log(person[property])
+}
+
+let students = ["Sam", "Dean", "Castiel"]
+
+for (let index in students){
+  console.log(students[index])
+}
