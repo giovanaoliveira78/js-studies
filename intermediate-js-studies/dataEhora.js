@@ -45,3 +45,27 @@ console.log(date.getMinutes())
 
 // Exibe os segundos
 console.log(date.getSeconds())
+
+/////////////////////////////////////////////////////////////
+
+let data = new Date("February 10, 2025 08:15:00")
+
+// Modificar o ano
+data.setFullYear(2030)
+
+// Moficar o mês (começa com zero)
+data.setMonth(6)
+
+// Modificar o dia
+data.setDate(20)
+
+// Modificar a hora
+data.setHours(18)
+
+// Modificar os minutos
+data.setMinutes(20)
+
+// Modificar os segundos
+data.setSeconds(30)
+
+console.log(data)
