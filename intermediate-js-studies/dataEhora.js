@@ -69,3 +69,23 @@ data.setMinutes(20)
 data.setSeconds(30)
 
 console.log(data)
+
+/////////////////////////////////////////////////////
+
+// Formatando data e hora
+
+let date1 = new Date("2025-07-02T14:30:00")
+
+// Formata para o dia sempre ter 2 dígitos
+let day = date1.getDate().toString().padStart(2, "0")
+console.log(day)
+
+// Formata para o mês ter 2 dígitos
+let mounth = (date1.getMonth() + 1).toString().padStart(2, "0")
+console.log(mounth)
+
+let year = date1.getFullYear()
+let hour = date1.getHours()
+let minutes = date1.getMinutes()
+
+console.log(`${day}/${mounth}/${year} às ${hour}:${minutes}`)
