@@ -104,3 +104,18 @@ console.log(data1.toDateString())
 
 // Exibe somente a hora
 console.log(data1.toTimeString())
+
+///////////////////////////////////////////////////////
+
+// Exibe data e hora de acordo com a localidade
+
+let date2 = new Date("2025-07-02T15:23:00")
+
+// Exibe a data e hora no formato local
+console.log(date2.toLocaleDateString())
+console.log(date2.toLocaleTimeString())
+
+// Exibe a data e hora no formato escolhido
+console.log(date2.toLocaleString("en")) // mostra data e hora
+console.log(date2.toLocaleDateString("en")) // mostra só a data
+console.log(date2.toLocaleTimeString("en")) // mostra só a hora
