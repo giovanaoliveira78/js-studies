@@ -89,3 +89,18 @@ let hour = date1.getHours()
 let minutes = date1.getMinutes()
 
 console.log(`${day}/${mounth}/${year} às ${hour}:${minutes}`)
+
+/////////////////////////////////////////////////////
+
+// Convertendo uma data para string 
+
+let data1 = new Date("2025-07-02T15:30:00")
+
+// Converte para string
+console.log(data1.toString())
+
+// Exibe só a data
+console.log(data1.toDateString())
+
+// Exibe somente a hora
+console.log(data1.toTimeString())
