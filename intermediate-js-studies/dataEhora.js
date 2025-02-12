@@ -158,10 +158,10 @@ let amount = 12.5
 console.log(amount.toLocaleString("pt-BR", {
   style: "currency",
   currency: "BRL"
-  }))
+}))
 
 ////////////////////////////////////////////////////////////
-  
+
 // Aprendendo sobre fuso horário  
 
 // Timestamp
@@ -177,3 +177,22 @@ console.log(amount.toLocaleString("pt-BR", {
 // Sempre há duas maneiras de interpretar data e hora: local ou como Tempo Universal Coordenado (UTC)
 
 // O fuso horário local não é armazenado no objeto de data, mas é determinado pelo ambiente que está exeutando (dispositivo do usuário)
+
+// Intl é a API de Internacionalização do ECMAScript
+
+// Obtém informações da localidade
+const currentLocale = Intl.DateTimeFormat().resolvedOptions()
+
+console.log(currentLocale)
+
+// Exibe no formato de acordo com a localidade
+console.log(new Intl.DateTimeFormat("pt-BR").format(new Date()))
+console.log(new Intl.DateTimeFormat("en-US").format(new Date()))
+
+const dataa = new Date()
+
+// Obtém a diferença em minutos do timezone
+console.log(dataa.getTimezoneOffset())
+
+// Obtém a diferença em horas do timezone
+console.log(dataa.getTimezoneOffset() /60)
