@@ -119,3 +119,43 @@ console.log(date2.toLocaleTimeString())
 console.log(date2.toLocaleString("en")) // mostra data e hora
 console.log(date2.toLocaleDateString("en")) // mostra só a data
 console.log(date2.toLocaleTimeString("en")) // mostra só a hora
+
+// Da pra definir um padrão usando o toLocaleString
+console.log(date.toLocaleString("en"))
+
+// EXibe a data em style diferente
+console.log(date.toLocaleString("pt-BR", {
+  dateStyle: "short"
+})
+)
+
+//
+console.log(date.toLocaleString("pt-BR", {
+  dateStyle: "long" // Exibe 10 de fevereiro de 2025, dessa forma
+})
+)
+
+console.log(date.toLocaleString("pt-BR", {
+  dateStyle: "medium" // Exibe 10 de fev. de 2025, dessa forma
+})
+)
+
+console.log(date.toLocaleString("pt-BR", {
+  dateStyle: "full" // Exibe segunda-feira, 10 de fevereiro de 2025, dessa forma
+})
+)
+
+console.log(date.toLocaleString("pt-BR", {
+  day: "2-digit",
+  month: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit"
+}))
+
+let amount = 12.5
+
+// Usando toLocaleString para formatar exibição de valores
+console.log(amount.toLocaleString("pt-BR", {
+  style: "currency",
+  currency: "BRL"
+  }))
