@@ -196,3 +196,13 @@ console.log(dataa.getTimezoneOffset())
 
 // Obtém a diferença em horas do timezone
 console.log(dataa.getTimezoneOffset() /60)
+
+////////////////////////////////
+
+// Criando uma data e hora com fuso horário
+
+const dateWithTimezone = new Date("2025-02-12T17:25:10.916-03:00") // se colocar da pra usar o + e o -
+// console.log(dateWithTimezone.toISOString())
+
+console.log(new Date().toLocaleString())
+console.log(dateWithTimezone.toLocaleString())
