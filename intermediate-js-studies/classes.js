@@ -11,3 +11,11 @@
 // Herança
 
 // Uma classe pode herdar propriedades e métodos de outra classe, permitindo a reutilização do código.
+
+class Person {
+  constructor(name) {
+    console.log("Hey,", name)
+  }
+}
+
+const person = new Person("Tito")
