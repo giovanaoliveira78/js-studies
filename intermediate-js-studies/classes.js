@@ -52,3 +52,21 @@ class User {
 
 const user = new User("Fulano", "email@email.com")
 user.sendEmail()
+
+////////////////////////////////////////////
+
+// O que é método estático?
+
+// Metodos estáticos são acessados sem instanciar uma classe (const blabla = new Blabla())da pra chamar direto
+
+// Aqui não da pra usar o constructor, porque ele só funciona instanciando, como no static não precisa instanciar, ele não funciona
+class Usuario {
+ static showMessage(message){
+    console.log(message)
+  }
+}
+
+// const usuario = new Usuario()
+// usuario.showMessage()
+
+Usuario.showMessage("Essa é uma mensagem")
