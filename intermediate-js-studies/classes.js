@@ -34,3 +34,21 @@ console.log(product1.name)
 
 const product2 = new Product("Mouse")
 console.log(product2.name)
+
+//////////////////////////////////
+
+// Adicionando métodos nas classes
+
+class User {
+  constructor(name, email){
+    this.name = name
+    this.email = email
+  }
+
+  sendEmail(){
+    console.log("Email enviado para", this.name, "no endereço eletrônico", this.email)
+  }
+}
+
+const user = new User("Fulano", "email@email.com")
+user.sendEmail()
