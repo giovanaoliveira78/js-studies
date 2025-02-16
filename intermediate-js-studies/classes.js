@@ -40,12 +40,12 @@ console.log(product2.name)
 // Adicionando métodos nas classes
 
 class User {
-  constructor(name, email){
+  constructor(name, email) {
     this.name = name
     this.email = email
   }
 
-  sendEmail(){
+  sendEmail() {
     console.log("Email enviado para", this.name, "no endereço eletrônico", this.email)
   }
 }
@@ -61,7 +61,7 @@ user.sendEmail()
 
 // Aqui não da pra usar o constructor, porque ele só funciona instanciando, como no static não precisa instanciar, ele não funciona
 class Usuario {
- static showMessage(message){
+  static showMessage(message) {
     console.log(message)
   }
 }
@@ -70,3 +70,33 @@ class Usuario {
 // usuario.showMessage()
 
 Usuario.showMessage("Essa é uma mensagem")
+
+////////////////////////////////////////////////
+
+// Como aplicar herança com classes?
+
+class Animal {
+  constructor(name) {
+    this.name = name
+  }
+  makeNoise() {
+    console.log("Algum som genérico do animal")
+  }
+}
+
+// A palavra reservada extends significa herdar, nesse caso a classe dog irá herda tudo da classe Animal
+class Dog extends Animal {
+  // Não tem nada aqui
+}
+
+class Cat extends Animal {
+  // Não tem nada aqui
+}
+
+const dog = new Dog("Bob")
+console.log(dog.name)
+dog.makeNoise()
+
+const cat = new Cat("Tito")
+console.log(cat.name)
+cat.makeNoise()
