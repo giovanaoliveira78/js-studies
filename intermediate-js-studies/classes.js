@@ -149,7 +149,7 @@ console.log(users)
 const nome = "Tito Lino"
 console.log(nome.__proto__) // se colocar o __proto__ ele mostra o prototype do objeto
 
-// Como utilizar classes pra lidar com excessões
+// Como utilizar classes pra lidar com exceções
 
 let obj = []
 let index = 300
@@ -171,5 +171,27 @@ try {
     console.log(error.message)
   } else {
     console.log("Não foi possível realizar a ação.")
+  }
+}
+
+///////////////////////////////////////////////////
+
+// Como criar classes para criar erros customizados
+
+class MycustomError {
+  constructor(message) {
+    this.message = "Classe de erro customizada: " + message
+  }
+}
+
+try {
+  // throw new Error("Erro genérico!")
+
+  throw new MycustomError("Erro personalizado lançado! ")
+} catch (error) {
+  if (error instanceof MycustomError) {
+    console.log(error.message)
+  } else {
+    console.log("Não foi possível executar!")
   }
 }
