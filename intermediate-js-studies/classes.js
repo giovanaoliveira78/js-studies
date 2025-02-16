@@ -112,3 +112,23 @@ console.log(cat.name)
 cat.makeNoise()
 
 cat.run()
+
+////////////////////////////////////////////////////////////
+
+// Aprendendo sobre herança e cadeia de protótipos
+
+// Difereça de classes x prototype
+// JS é dinâmico e não dispõe de uma implementação de uma class (a palavra chave class foi introduzida no ES2015, mas é syntax sugar, o JS permanece baseado em prototype)
+
+// Protoype
+// Quando se trata de heranças, o JS tem somente um construtor: objetos.
+// Cada objeto tem um link interno para um outro objeto chamado prototype.
+// O objeto prototype também tem um atributo porototyoe, e assim por diante até que o valor null seja encontrado como sendo o seu prototype.
+// O null que, por definição, não tem prototype, e age como um link final nesta cadeia de protótipos (prototype chain).
+
+// Resumo
+// Quando um objeto é criado ele possui automaticamente uma propriedade que referência outro objeto e esse objeto é chamado de prototype
+// O Objeto prototype herda propriedades e métodos do seu protótipo ascendente. Essas propriedades não pertencem ao objeto em si, mas sim ao prototype do objeto
+// O prototype é o mecanismo pelo qual os objetos JS herdam recursos uns dos outros
+// A cadeia termina quando chegamos a um protótipo que tem null por protótipo
+// Um objeto pode utilizar qualquer propriedade ou método que existir nesse encadeamento de protótipos
