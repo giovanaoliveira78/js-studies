@@ -85,12 +85,22 @@ class Animal {
 }
 
 // A palavra reservada extends significa herdar, nesse caso a classe dog irá herda tudo da classe Animal
+
+// Usando para sobrescrever o método
 class Dog extends Animal {
-  // Não tem nada aqui
+  makeNoise() {
+    console.log("Au au") // para sobrescrever eu escrevo igualzinho onde criei (nesse caso foi criado dentro de Animal)
+  }                      // Quando escrevo igual, ele sobrescreve o que já existe
 }
 
 class Cat extends Animal {
-  // Não tem nada aqui
+  makeNoise() {
+    console.log("Miau")
+  }
+
+  run() {
+    console.log("Correndo...")
+  }
 }
 
 const dog = new Dog("Bob")
@@ -100,3 +110,5 @@ dog.makeNoise()
 const cat = new Cat("Tito")
 console.log(cat.name)
 cat.makeNoise()
+
+cat.run()
