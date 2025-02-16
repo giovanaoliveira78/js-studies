@@ -148,3 +148,28 @@ console.log(users)
 
 const nome = "Tito Lino"
 console.log(nome.__proto__) // se colocar o __proto__ ele mostra o prototype do objeto
+
+// Como utilizar classes pra lidar com excessões
+
+let obj = []
+let index = 300
+
+try {
+
+  if (!obj.includes(17)) {
+    throw new Error("O número 17 não está disponível.")
+  }
+
+  if (index > 99) {
+    throw new RangeError("O número está fora do intervalo. Escolha um número de 0 a 99.")
+  }
+} catch (error) {
+
+  if (error instanceof TypeError) {
+    console.log("Método indisponível")
+  } else if (error instanceof RangeError) {
+    console.log(error.message)
+  } else {
+    console.log("Não foi possível realizar a ação.")
+  }
+}
