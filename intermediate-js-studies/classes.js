@@ -132,3 +132,19 @@ cat.run()
 // O prototype é o mecanismo pelo qual os objetos JS herdam recursos uns dos outros
 // A cadeia termina quando chegamos a um protótipo que tem null por protótipo
 // Um objeto pode utilizar qualquer propriedade ou método que existir nesse encadeamento de protótipos
+
+// Criando um objeto prototype
+
+const address = {
+  city: "Sao Paulo",
+  country: "Brazil",
+}
+
+console.log(address)
+
+const users = ["Jade", "Elena", "Isis"]
+
+console.log(users)
+
+const nome = "Tito Lino"
+console.log(nome.__proto__) // se colocar o __proto__ ele mostra o prototype do objeto
