@@ -13,3 +13,5 @@
 // Com essa junção, foi criado um novo padrão de linguagem, que foi batizado com a união das palavras "ECMA" e "JavaScript", resultando no nome ECMAScript.
 // Em resumo, JS é a linguagem que você escreve e executa nos navegadores, enquanto ECMAScript é a especificação que define como a linguagem JS deve se comportar.
 // As versões do ECMAScript (ES6, ES7, etc) indicam as atualizações novidades a linguagem ao longo do tempo.
+// Sempre que há uma nova atualização dos recursos do JavaScript, ela é lançada pelo ECMAScript, que pode ser abreviada como ES.
+// É dessa especificação que veio siglas como ECMAScript 2023, ES2023 ou ES14.
