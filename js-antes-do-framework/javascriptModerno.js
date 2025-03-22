@@ -108,3 +108,21 @@ newProduct({
   description: "Mouse",
   price: 70
 })
+
+//////////////////////////////////////////////////////////
+
+// Conhecendo rest params
+// Rest params (...) permite representar um número indefinido de argumentos como um array
+
+function values(a, ...rest) { // usa o ... rest para deixar a quantidadede de parametros dinamico
+  // Mostra a quantidade de parametros
+  console.log(rest.length)
+
+  // Exibindo o contéudo do array
+  console.log(...rest) // também da pra chamar de args 
+
+  // Exibe o conteúdo do rest que é um array
+  console.log(rest)
+}
+
+values(2, 3, 4)
