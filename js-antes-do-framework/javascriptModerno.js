@@ -126,3 +126,26 @@ function values(a, ...rest) { // usa o ... rest para deixar a quantidadede de pa
 }
 
 values(2, 3, 4)
+
+/// Spread
+// (espalhar) permite que um objeto iterável, como uma expressão de array ou uma string seja expandido para ser usado onde zero ou mais argumentos
+
+const numbers = [1, 2, 3]
+console.log(numbers)
+
+// Spread 
+console.log(...numbers)
+
+// Criando um objeto
+const data1 = [
+  {
+    name: "Elena",
+    email: "elena@email",
+    avatar: "e.png"
+  }
+]
+
+console.log(data1)
+
+// Utilizando o spread no array com objetos
+console.log(...data1)
