@@ -22,27 +22,27 @@
 
 // O strict mode (modo estrito): ativando esse modo, os erros que eram silenciosos passa a gerar exceçoes no JS
 
-"use strict" // Não irá permitir o uso de variáveis sem declaração, irá retornar um erro
+// "use strict" // Não irá permitir o uso de variáveis sem declaração, irá retornar um erro
 // Da pra usar global e dentro da função
-function showMessage() {
+//function showMessage() {
 
-  let personName = "Jhonny" // se colocar a let não irá dar erro, pois ele vai procurar a variável no escopo global
-  console.log("Olá, " + personName)
-}
+  //let personName = "Jhonny" // se colocar a let não irá dar erro, pois ele vai procurar a variável no escopo global
+  //console.log("Olá, " + personName)
+//}
 
-showMessage()
+//showMessage()
 
-class Student {
-  get point() { // get point é uma função para obter um retorno
-    return 7
-  }
-}
+//class Student {
+ // get point() { // get point é uma função para obter um retorno
+   // return 7
+  //}
+//}
 
-let Student = new Student()
+//let Student = new Student()
 // Tenta mudar uma propriedade somente leitura
 // student.point = 10
 
-console.log(student.point)
+//console.log(Student.point)
 
 // Tentando deletar uma propriedade de um objeto que não posso deletar
 //delete window.document
@@ -55,3 +55,32 @@ console.log(student.point)
 const result = sum(1, 3, 2)
 console.log("RESULTADO", result)
 */
+
+//////////////////////////////////////////////////
+
+// Desestruturação de array 
+
+// destructuring assignment (desestruturação) permite extrair dados de arrays ou objetos em variáveis distintas.
+
+const data = ["Elena Gilbert", "elena@email.com"]
+
+// Desestruturando array
+
+const [username, email] = data // pego o contéudo de data e na primeira posição pego o conteúdo dela e coloco dentro da primeira variavel criada aqui
+console.log("Nome:", username)
+console.log("Email:", email)
+
+const fruits = ["Banana", "Apple", "Orange"]  
+
+// Desestruturar somente o primeiro
+
+const [banana] = fruits
+console.log(banana)
+
+// Ignorando o primeiro na desestruturação
+const [_, Apple] = fruits // quando coloco o _ ele ignora o primeiro item
+console.log(Apple)
+
+// Ignorando o primeiro e o segundo na desestruturação
+const[, , Orange] = fruits
+console.log(Orange)
