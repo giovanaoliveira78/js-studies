@@ -26,16 +26,16 @@
 // Da pra usar global e dentro da função
 //function showMessage() {
 
-  //let personName = "Jhonny" // se colocar a let não irá dar erro, pois ele vai procurar a variável no escopo global
-  //console.log("Olá, " + personName)
+//let personName = "Jhonny" // se colocar a let não irá dar erro, pois ele vai procurar a variável no escopo global
+//console.log("Olá, " + personName)
 //}
 
 //showMessage()
 
 //class Student {
- // get point() { // get point é uma função para obter um retorno
-   // return 7
-  //}
+// get point() { // get point é uma função para obter um retorno
+// return 7
+//}
 //}
 
 //let Student = new Student()
@@ -70,7 +70,7 @@ const [username, email] = data // pego o contéudo de data e na primeira posiç�
 console.log("Nome:", username)
 console.log("Email:", email)
 
-const fruits = ["Banana", "Apple", "Orange"]  
+const fruits = ["Banana", "Apple", "Orange"]
 
 // Desestruturar somente o primeiro
 
@@ -82,5 +82,29 @@ const [_, Apple] = fruits // quando coloco o _ ele ignora o primeiro item
 console.log(Apple)
 
 // Ignorando o primeiro e o segundo na desestruturação
-const[, , Orange] = fruits
+const [, , Orange] = fruits
 console.log(Orange)
+
+///////////////////////////////////////////////////////////////////////////
+
+// Desestruturação de objetos
+
+const product = {
+  description: "teclado",
+  price: 150
+}
+
+const { description, price } = product // pego o contéudo de product e na primeira posição pego o contéudo dele e coloco dentro da primeira variavel criada aqui
+console.log("Descrição:", description)
+console.log("Preço:", price)
+
+function newProduct({ description, price }) {
+  console.log("### Novo produto ###")
+  console.log("Descrição:", description)
+  console.log("Preço:", price)
+}
+
+newProduct({
+  description: "Mouse",
+  price: 70
+})
