@@ -86,3 +86,17 @@ const fruits = [
 
 const result = fruits.find((fruit) => fruit.name === "banana")
 console.log(result)
+
+///////////////////////////////////////////////////////
+
+// Metodo every()
+// Testa se todos os elementos do array passam na condição e retorna um valor Boolean
+
+// Exemplo de array de idades.
+
+const ages = [15, 30, 39, 29]
+
+// Verificando se todas as idades são maiores ou iguais do que 18
+const resultAge = ages.every((age) => age >= 18)
+console.log(resultAge) // irá retornar false porque tem o 15, que não é maior ou igual a 18
+// só vai retornar verdadeiro se todos os itens atendem a condição, se um não atender já retorna falso
