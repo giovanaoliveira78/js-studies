@@ -100,3 +100,16 @@ const ages = [15, 30, 39, 29]
 const resultAge = ages.every((age) => age >= 18)
 console.log(resultAge) // irá retornar false porque tem o 15, que não é maior ou igual a 18
 // só vai retornar verdadeiro se todos os itens atendem a condição, se um não atender já retorna falso
+
+//////////////////////////////////////////////////////
+
+// Metodo some()
+// Testa se ao menos um dos elementos do array passa na condição e retorna um valor true ou false
+
+// Exemplo de array de idades
+
+const ages1 = [15, 30, 39, 29]
+
+const resultAge1 = ages1.some((age) => age > 18)
+console.log(resultAge1) // retorna true pois possui o 15 que é menor do que 18
+// Um sendo verdadeiro já retorna true
