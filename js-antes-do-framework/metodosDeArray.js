@@ -34,8 +34,8 @@ console.log(formatted)
 const words = ["Javascript", "HTML", "CSS", "WEB"]
 
 // Filtrando palavras que tenham mais do que 3 letras
-const result = words.filter((word) => word.length > 3)
-console.log(result)
+//const result = words.filter((word) => word.length > 3)
+//console.log(result)
 
 const produtos = [
   { description: "Teclado", price: 150, promotion: true },
@@ -63,3 +63,26 @@ console.log(values[index])
 
 // Exemplo de quando não encontrou 
 console.log(values.findIndex((value) => value > 12))
+
+//////////////////////////////////////////////////////
+
+// Método find
+
+// Retorna o valor do primeiro elemento do array que satisfazer a condição. Caso contrário, undefined é retornado
+
+const values1 = [5, 12, 8, 130, 44]
+
+// Retorna o primeiro elemento que o valor é maior do que 10
+const found = values1.find((value) => value > 10)
+console.log(found)
+
+// Exemplo com objetos
+
+const fruits = [
+  { name: "apple", quantity: 23 },
+  { name: "banana", quantity: 25 },
+  { name: "orange", quantity: 52 }
+]
+
+const result = fruits.find((fruit) => fruit.name === "banana")
+console.log(result)
