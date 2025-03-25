@@ -113,3 +113,35 @@ const ages1 = [15, 30, 39, 29]
 const resultAge1 = ages1.some((age) => age > 18)
 console.log(resultAge1) // retorna true pois possui o 15 que é menor do que 18
 // Um sendo verdadeiro já retorna true
+
+
+////////////////////////////////////////////////////////////
+
+///Método Reduce()
+
+// é utilizado para reduzir um array a um único valor
+
+/*
+Parâmetros:
+- Array original (values)
+- Acumulador (accumulator)
+- Valor da iteração (currentValue)
+- Valor inicial (0)
+- Index (index da iteração atual - opcional)
+*/
+
+const values2 = [1, 2, 3, 4, 5]
+
+const sum = values2.reduce((accumulator, currentValue, index) => {
+  /*console.log("ACUMULADOR", accumulator)
+  console.log("CURRENT VALUE", currentValue)
+  console.log("INDEX", index)
+
+
+  console.log("SOMA", accumulator + currentValue)
+  console.log("#########################")
+  */
+  return accumulator + currentValue
+}, 0)
+
+console.log("RESULTADO DA SOMA FINAL:", sum)
