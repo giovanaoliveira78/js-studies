@@ -47,3 +47,34 @@ const list1 = ["Apple", "Banana"]
 const list2 = [...list1, "Watermelon"]
 
 console.log(list1, list2)
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// Shallow e deep copy
+
+const htmlCourse = {
+  course: "HTML",
+  students: [{ name: "Damon", email: "email@email" }],
+}
+
+// const jsCourse = {
+//   ...htmlCourse,
+//   course: "JavaScript",
+//   students: [...htmlCourse.students]
+// }
+
+// Vai modificar o htmlCourse porque students é uma referência e não uma cópia
+//jsCourse.students.push({ name: "John", email: "email@email" })
+
+// Deep Copy (cópia profunda)
+const jsCourse = {
+  ...htmlCourse,
+  course: "JavaScript",
+  students: [...htmlCourse.students, { name: "Elena Gilbert", email: "elena@email.com" }]
+}
+
+// Dessa forma também adiciona um novo aluno
+jsCourse.students.push({ name: "Stefan", email: "stefan@email" })
+
+console.log("HMTL", htmlCourse)
+console.log("JS", jsCourse)
