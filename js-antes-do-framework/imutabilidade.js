@@ -139,3 +139,21 @@ book.category = "HTML"
 book.author.name = "Elena Gilbert" // Ambos os casos não alterou
 
 console.log(book2)
+
+// Manipulando objetos imutáveis
+
+// Aqui modificamos o book2
+const updateBook = {
+  ...book2,
+  title: "Criando um Front-end moderno com HMTL",
+  category: "HTML",
+  type: "Programming"
+}
+
+console.log(updateBook)
+
+// Utilizando operador de desestruturação (rest operator) para remover propriedades
+
+const { category, ...livro } = book2
+
+console.log(livro)
