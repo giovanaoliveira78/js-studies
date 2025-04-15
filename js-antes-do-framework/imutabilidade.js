@@ -78,3 +78,26 @@ jsCourse.students.push({ name: "Stefan", email: "stefan@email" })
 
 console.log("HMTL", htmlCourse)
 console.log("JS", jsCourse)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// SHALLOW E FREEZING
+
+const book = {
+  title: "Objetos Imutáveis",
+  category: "Javascript",
+  author: {
+    name: "Stefan",
+    email: "stefan@email.com"
+  }
+}
+// O JS em si não impõe restrições a modificações dos objetos
+//book.category = "HTML"
+
+// Congela o objeto e impede a modificação
+Object.freeze(book)
+book.category = "HTML" // após aplicar o freeze ele não modifica 
+
+// O Object.freeze () não impede modificações profundas em objetos aninhados (shallow freezing)
+book.author.name = "Elena Gilbert"
+console.log(book)
