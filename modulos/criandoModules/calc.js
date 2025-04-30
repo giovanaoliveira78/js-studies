@@ -16,3 +16,6 @@ export function multiply(a, b) {
 
 // Também da para exportar tudo de uma vez
 // export { sum, multiply }
+
+// Para exportar a função com outro nome
+// export { sum as sumNumbers, multiply } // lá no import vai aparecer o nome renomeado

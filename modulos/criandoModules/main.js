@@ -14,3 +14,5 @@ console.log("4 * 6 =", multiply(4, 6))
 // Se eu importar tudo de uma vez, eu posso chamar assim:
 // console.log("4 + 6 =", calc.sum(4, 6))
 // console.log("4 * 6 =", calc.multiply(4, 6))
+
+// Para renomear a função tem que importar ela toda no final do arquivo que a função está
