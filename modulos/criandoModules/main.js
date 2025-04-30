@@ -1,6 +1,13 @@
 import { sum, multiply } from "./calc.js"
 // import * as calc from "./calc.js" // também da para importar tudo de uma vez
 
+
+// Se a função tiver como defalut, eu posso chamar assim:  
+import sum from "./calc.js" // não precisa das chaves, e com as chaves da erro
+// Caso eu queira importar uma função que esta como default, e outra que não está
+import sum, { multiply } from "./calc.js"
+
+
 console.log("4 + 6 =", sum(4, 6))
 console.log("4 * 6 =", multiply(4, 6))
 
