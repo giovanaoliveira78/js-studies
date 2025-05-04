@@ -16,3 +16,6 @@ console.log("4 * 6 =", multiply(4, 6))
 // console.log("4 * 6 =", calc.multiply(4, 6))
 
 // Para renomear a função tem que importar ela toda no final do arquivo que a função está
+
+//Também tem como renomear dirto no import
+//import { sum as s, multiply as m} from "./calc.js" // dessa forma
