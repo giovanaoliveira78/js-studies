@@ -1,3 +1,17 @@
+// é comum começar nome de classes com letra maíscula 
+export class Calc {
+  name = "Elena"
+
+  sum(a, b) {
+    return a + b
+  }
+
+  multiply(a, b) {
+    return a * b
+  }
+
+}
+
 export function sum(a, b) {
   return a + b
 }

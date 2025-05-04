@@ -19,3 +19,13 @@ console.log("4 * 6 =", multiply(4, 6))
 
 //Também tem como renomear dirto no import
 //import { sum as s, multiply as m} from "./calc.js" // dessa forma
+
+
+// Foi criado a classe Calc no arquivo calc.js
+// Para importar a classe, eu posso fazer assim:
+import Calc from "./calc.js"
+const calc = new Calc()
+
+console.log("4 + 6 =", calc.sum(4, 6))
+console.log("4 * 6 =", calc.multiply(4, 6))
+console.log(calc.name)
