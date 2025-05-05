@@ -29,3 +29,9 @@ const calc = new Calc()
 console.log("4 + 6 =", calc.sum(4, 6))
 console.log("4 * 6 =", calc.multiply(4, 6))
 console.log(calc.name)
+
+
+// setTimeout() executa uma função após um intervalo de tempo especificado
+setTimeout(() => {
+  console.log("Olá! Tudo bem?")
+}, 2000) // Conta o tempo em milisegundos
