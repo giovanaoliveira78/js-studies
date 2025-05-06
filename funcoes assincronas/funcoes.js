@@ -26,3 +26,41 @@ Quando a função assíncrona lança uma exceção ou algum valor, a Promise ser
 
 Uma função assíncrona pode conter uma expressão de await, que pausa a execução da função assíncrona e espera pela resolução da Promise passada, e depois retoma a execução da função assíncrona e retorna o valor resolvido.
 */
+
+// Promisses 
+
+// Função que retorna uma Promise
+
+function asyncFunction() {
+  return new Promise((resolve, reject) => {
+    // Simula uma operação assíncrona
+    setTimeout(() => {
+      const isSuccess = true
+
+      if (isSuccess) {
+        resolve("A operação foi concluída com sucesso")
+      } else {
+        reject("Algo deu errado")
+      }
+    }, 3000) // Simula uma operação que leva 3 segundos
+  })
+}
+
+// Visualizando que o retorno é uma promise
+//console.log(asyncFunction())
+
+
+console.log("Executado...")
+
+//const response = asyncFunction()
+//console.log(response)
+
+asyncFunction().then((response) => {
+  console.log("SUCESSO", response)
+})
+  .catch((error) => {
+    console.log("ERRO", error)
+  })
+  .finally(() => {
+    console.log("FIM")
+  })
