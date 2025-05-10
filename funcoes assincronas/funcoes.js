@@ -64,3 +64,27 @@ asyncFunction().then((response) => {
   .finally(() => {
     console.log("FIM")
   })
+
+// Conhecendo async e await 
+
+async function fetch() {
+  try {
+    const response = await asyncFunction()
+    console.log("SUCESSO", response)
+    asyncFunction()
+    console.log(response)
+  } catch (error) {
+    console.log("ERRO", error)
+  } finally {
+    console.log("FIM da execução")
+  }
+}
+
+fetch()
+
+// Também tem como usar com aron function
+/*const fetch = async () => {
+  const response = await asyncFunction()
+  asyncFunction()
+  console.log(response)
+}*/
