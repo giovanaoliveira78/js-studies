@@ -133,3 +133,27 @@ Macrotasks: Sao tarefas de menor prioridade, como callbacks de eventos, setTimeo
 3. Verificação do Event Loop: O Event Loop verifica a pilha de chamadas e a fila de callback. Se a pilha estiver vazia, ele move um callback da fila de callback para a pilha de chamadas
 4. Microtasks: Antes de verificar novamente a fila de callback, o Event Loop executa todas as microtasks pendentes
 */
+
+
+/// Prioridade em ordem de execução
+
+// (1)Executa o código de forma síncrona e o valor 1 é impresso imediatamente no console
+console.log(1)
+
+// (3) Microtasks são executadas antes de temporizadores e Promises
+queueMicrotask(() => {
+  console.log(2)
+})
+
+// (5) Macrotask que aguarda o evento de temporizador ser acionado.
+setTimeout(() => {
+  console.log(3)
+}, 1000)
+
+//(2) Execução síncrona
+console.log(4)
+
+// (4) Adiciona uma microtask
+Promise.resolve(true).then(() => {
+  console.log(5)
+})
